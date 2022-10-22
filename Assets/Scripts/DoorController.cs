@@ -27,7 +27,8 @@ public class DoorController : MonoBehaviour
         }
     }
 
-    private void OnDestroy() {
+    private void OnDestroy()
+    {
         GameEvents.current.onDoorwayTriggerEnter -= OnDoorwayOpen;
         GameEvents.current.onDoorwayTriggerExit -= OnDoorwayClose;
     }
